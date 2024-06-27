@@ -1,0 +1,29 @@
+{
+  "name": "@akliegman/component-generator",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node generateComponent.js"
+  },
+  "bin": {
+    "generate-component": "./generateComponent.js"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "scss",
+    "component",
+    "generator"
+  ],
+  "author": "Adam Kliegman",
+  "license": "MIT",
+  "description": "A CLI tool to generate React components with TypeScript and SCSS",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "prettier": "^3.3.2",
+    "yargs": "^17.7.2"
+  },
+  "type": "module"
+}
