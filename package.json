@@ -1,12 +1,12 @@
 {
   "name": "@akliegman/component-generator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "scripts": {
-    "start": "node generateComponent.js"
+    "start": "babel-node index.js"
   },
   "bin": {
-    "generate-component": "./generateComponent.js"
+    "generate-component": "babel-node ./index.js"
   },
   "keywords": [
     "react",
@@ -17,13 +17,24 @@
   ],
   "author": "Adam Kliegman",
   "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akliegman/component-generator.git"
+  },
   "description": "A CLI tool to generate React components with TypeScript and SCSS",
-  "dependencies": {
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/node": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/register": "^7.24.6",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "change-case": "^5.4.4",
     "child_process": "^1.0.2",
     "fs": "^0.0.1-security",
     "path": "^0.12.7",
     "prettier": "^3.3.2",
     "yargs": "^17.7.2"
-  },
-  "type": "module"
+  }
 }
