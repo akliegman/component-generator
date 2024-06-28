@@ -1,6 +1,6 @@
 # @akliegman/component-generator
 
-[![npm version](https://badge.fury.io/js/%40akliegman%2Fcomponent-generator.svg)](https://www.npmjs.com/package/@akliegman/component-generator/v/0.0.3)
+[![npm version](https://badge.fury.io/js/%40akliegman%2Fcomponent-generator.svg)](https://www.npmjs.com/package/@akliegman/component-generator/v/0.0.4)
 
 A CLI tool to generate React components with TypeScript, SCSS/CSS/LESS stylesheets, customizable prop types, and Prettier formatting.
 
@@ -34,18 +34,18 @@ generate-component -n <ComponentName> [-p <props>] [-pt <propTypes>] [-t <target
 
 ### Options
 
--n, --name (required): The name of the component.
--f, --format: The format of the files, either named (e.g. ComponentName.tsx and ComponentName.module.scss) or default (e.g. index.tsx or styles.module.scss)'.
--p, --props: Comma-separated list of prop names for the component.
--t, --target: The target directory where the component will be created. Default is src/components.
---htmlTag, --html: HTML tag for the component (default: "div").
---componentType, --ct: Type of component to generate (const, function).
---printReactImportStatement: Print the import statement for React.
---propTypes, --pt: Comma-separated list of prop types for the component. Must match the order of the props.
---styleCase, --sc: Naming convention for the stylesheet (camel, kebab, snake, default - same a function name).
---skipStyles, --ss: Skip generating/importing styles.
---styleType, --st: Type of stylesheet to generate (css, scss, less).
--h, --help: View help message.
+ * -n, --name (required): The name of the component.
+ * -f, --format: The format of the files, either named (e.g. ComponentName.tsx and ComponentName.module.scss) or default (e.g. index.tsx or styles.module.scss)'.
+ * -p, --props: Comma-separated list of prop names for the component.
+ * -t, --target: The target directory where the component will be created. Default is src/components.
+ * --htmlTag, --html: HTML tag for the component (default: "div").
+ * --componentType, --ct: Type of component to generate (const, function).
+ * --printReactImportStatement: Print the import statement for React.
+ * --propTypes, --pt: Comma-separated list of prop types for the component. Must match the order of the props.
+ * --styleCase, --sc: Naming convention for the stylesheet (camel, kebab, snake, default - same a function name).
+ * --skipStyles, --ss: Skip generating/importing styles.
+ * --styleType, --st: Type of stylesheet to generate (css, scss, less).
+ * -h, --help: View help message.
 
 ### Examples
 
